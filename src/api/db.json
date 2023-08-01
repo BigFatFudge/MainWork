@@ -1,0 +1,24 @@
+{
+"columnas": [
+        {
+            "id": 1,
+            "name": "Tipo de Documento"  
+        },
+        {
+            "id": 2,
+            "name": "Fecha de Documento"
+        },
+        {
+            "id": 3,
+            "name": "Documento Proveedor" 
+        },
+        {
+            "id": 4,
+           " name": "Documento Interno"
+        },
+        {
+            "id": 5,
+            "name": "Moneda Factura" 
+        }
+  ]   
+}

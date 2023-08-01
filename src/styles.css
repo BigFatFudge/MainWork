@@ -1,0 +1,39 @@
+.centered-element {
+    display: flex;
+    justify-content: center;
+    align-content: 'center';
+};
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+};
+
+th,
+td {
+    text-align: left;
+    padding: 0.5rem;
+    border-bottom: thin solid ; 
+}
+
+.containerOpciones {
+    padding: 20px;
+    background-color: #E6F2FD;
+    border: 1px solid #3A68BE;
+    border-radius: 5px;
+    margin-top: 15px; 
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center; 
+  };
+
+/* @media screen and (min-width: 1024px) {
+    .grid-1-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}  */
