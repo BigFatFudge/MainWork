@@ -58,7 +58,9 @@ export const CrudApp = () => {
     return (
     
         <div>
-            <h1 align='center'>Crud E-BP</h1>
+         
+         <br/>
+         <h2 align='center'>Tabla Cuenta Corriente</h2>
          <hr/>
        
          <article className="grid-1-2">
@@ -68,9 +70,8 @@ export const CrudApp = () => {
                 deleteData={deleteData}
           />
         </article>
-        <br/>
 
-            <div> 
+            <div className="centered-element"> 
                 <button className="btn btn-primary" >Aplicar</button>
             </div>
            

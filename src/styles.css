@@ -14,7 +14,10 @@ th,
 td {
     text-align: left;
     padding: 0.5rem;
-    border-bottom: thin solid ; 
+    border-bottom: thin solid;
+    display: flex;
+    gap: 10px;
+    align-items: center; 
 }
 
 .my-table {
@@ -29,15 +32,22 @@ td {
     display: flex;
     justify-content: center;
    
-  }; */
+  }; 
   
-  .my-table th,
+  .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  /* .my-table th,
   .my-table td {
     border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
-  };
+  }; */
   
+
   /* button:first-child {
     margin-right: 5px; /* Adjust this value for the desired gap size 
   } */

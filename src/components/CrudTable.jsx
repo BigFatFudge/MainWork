@@ -6,8 +6,15 @@ import '../styles.css';
 
 export const CrudTable = ({data, setDataToEdit, deleteData}) => {
   return (
+
+    
     <div>
-        <h3 justify-content='center'>Tabla Datos/Columnas</h3>
+
+        {/* <div className='table-title'>
+        <h3>Tabla Cuenta Corriente</h3>
+        </div> */}
+
+
          <div className='border border-primary w-75 my-table text-center element'> 
             <div className='container row justify-content-md-center d-flex'>
               <table>
