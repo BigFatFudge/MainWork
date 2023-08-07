@@ -68,7 +68,11 @@ export const CrudApp = () => {
                 deleteData={deleteData}
           />
         </article>
-            
+        <br/>
+
+            <div> 
+                <button className="btn btn-primary" >Aplicar</button>
+            </div>
            
         </div>
     )

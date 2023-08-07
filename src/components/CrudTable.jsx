@@ -7,35 +7,40 @@ import '../styles.css';
 export const CrudTable = ({data, setDataToEdit, deleteData}) => {
   return (
     <div>
-        <h2>Tabla Datos/Columnas</h2>
-    <div className='containerOptions'>
-        <table>
-            <thead>
-                <tr>
-                    <th>Columnas</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
+        <h3 justify-content='center'>Tabla Datos/Columnas</h3>
+         <div className='border border-primary w-75 my-table text-center element'> 
+            <div className='container row justify-content-md-center d-flex'>
+              <table>
+                <thead>
+                  <tr>
+                      <th align-text="center">Columnas</th>
+                      <th align-text="center">Acciones</th>                  
+                  {/* medio raro ese style */}                  
+                  </tr>
+                </thead>
        
-            <tbody>
-               {data.length === 0 ? (
-                 <tr>
-                    <td colSpan="3">Sin Datos</td>
-                 </tr>
-               ) : (
-                data.map((el) => <CrudTableRow                                     
-                                    key={el.id} 
-                                    el={el} 
-                                    setDataToEdit={setDataToEdit} 
-                                    deleteData={deleteData}
-                                />
+                <tbody>
+                    {data.length === 0 ? (
+                   <tr>
+                      <td colSpan="3">Sin Datos</td>
+                   </tr>
+                  ) : (
+                   data.map((el) =>
+                    <CrudTableRow                                     
+                            key={el.id} 
+                            el={el} 
+                            setDataToEdit={setDataToEdit} 
+                            deleteData={deleteData}
+                    />
                         )
-               )
-            }
-            </tbody>
+                    )
+                  }
+                </tbody>
 
-        </table>
-        </div>
-    </div>
+              </table>
+            </div> 
+          </div>
+      </div>
+
   )
 }

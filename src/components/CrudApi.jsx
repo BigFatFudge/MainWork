@@ -5,7 +5,8 @@ import CrudTable from "./CrudTable";
 import Loader from "./Loader";
 import Message from "./Message";
 
-const CrudApi = () => {
+export const CrudApi = () => {
+   
   const [db, setDb] = useState(null);
   const [dataToEdit, setDataToEdit] = useState(null);
   const [error, setError] = useState(null);
@@ -13,6 +14,9 @@ const CrudApi = () => {
 
   let api = helpHttp();
   let url = "http://127.0.0.1:5173/columnas";
+// Aca va la url de la DB JSON, no la url donde levanto el CRUD con vite.
+
+
 
   useEffect(() => {
     setLoading(true);
