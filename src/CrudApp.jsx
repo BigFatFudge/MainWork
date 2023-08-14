@@ -63,7 +63,7 @@ export const CrudApp = () => {
          <h2 align='center'>Tabla Cuenta Corriente</h2>
          <hr/>
        
-         <article className="grid-1-2">
+         <article>
           <CrudTable                
                 data={db}
                 setDataToEdit={setDataToEdit}
